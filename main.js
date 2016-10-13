@@ -295,6 +295,7 @@ function containsIs (words) {
 }
 // write your console.log/asserts here:
 console.log(containsIs(['this is', 'poo', 'disc is']));
+console.assert(containIs(['this is', 'nerd', 'disc is'])=== ['this is', 'disc is']);
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                                      Adventurer Mode                                                              //
