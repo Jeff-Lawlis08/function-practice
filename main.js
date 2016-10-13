@@ -179,8 +179,18 @@ console.assert(isVowel('f') === false);
 // "o" in between. For example, translate("this is fun") should return the
 // string "tothohisos isos fofunon".
 // write your code here:
-
+function translate(string) {
+  stringArray = string.split('');
+  for (i = 0; i < stringArray.length; i++) {
+    if (stringArray[i] !== 'a' || string[i] !== 'e' || string[i] !== 'i' || string[i] !== 'o' || string[i] !== 'u') {
+      stringArray[i] = stringArray[i]+'o'+stringArray[i];
+      newString = stringArray.join('');
+    }
+  }
+  return newString;
+}
 // write your console.log/asserts here:
+console.log(translate('griffin'));
 
 
 // ---------------------
