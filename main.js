@@ -22,7 +22,7 @@ var instructors = [
 // of those 2 numbers.
 // write your code here:
 function sum (a, b) {
-  c = a + b;
+  var c = a + b;
   return c;
 }
 // write your console.log/asserts here:
@@ -40,7 +40,7 @@ console.assert(sum(-48,5) === -43);
 // of those 3 numbers.
 // write your code here:
 function avg (a, b, c) {
-  d = (a+b+c)/3;
+  var d = (a+b+c)/3;
   return d;
 }
 // write your console.log/asserts here:
@@ -180,7 +180,7 @@ console.assert(isVowel('f') === false);
 // string "tothohisos isos fofunon".
 // write your code here:
 function translate(string) {
-  stringArray = string.split('');
+  var stringArray = string.split('');
   for (i = 0; i < stringArray.length; i++) {
     if (stringArray[i] !== 'a' || string[i] !== 'e' || string[i] !== 'i' || string[i] !== 'o' || string[i] !== 'u') {
       stringArray[i] = stringArray[i]+'o'+stringArray[i];
@@ -198,8 +198,8 @@ console.log(translate('griffin'));
 // For example, reverse("jag testar") should return the string "ratset gaj".
 // write your code here:
 function reverse(string) {
-  stringArray = string.split('').reverse();
-  revString = stringArray.join('');
+  var stringArray = string.split('').reverse();
+  var revString = stringArray.join('');
   return revString;
 }
 // write your console.log/asserts here:
