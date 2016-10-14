@@ -257,7 +257,7 @@ console.assert(longest(['dork', 'badger', 'thing'] === 'badger'));
 // Write a function called `getEvens` that takes an array of numbers and returns
 // a new array with only the even numbers from the original array
 // write your code here:
-myArray = [];
+var myArray = [];
 function getEvens (numbers) {
   for (i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0 ) {
@@ -275,7 +275,7 @@ console.assert(getEvens([4, 5, 6, 7]) === [4, 6]);
 // Write a function called `getOdds` that takes an array of numbers and returns
 // a new array with only the odd numbers from the original array
 // write your code here:
-myArray = [];
+var myArray = [];
 function getOdds (numbers) {
   for (i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 !== 0 ) {
